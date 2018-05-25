@@ -1,0 +1,21 @@
+.banner{
+    background: url('../res/training/training-background-3.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.heading{
+    padding: 0px 10%;
+    font-family: 'Noto Serif', 'Times', serif !important;
+}
+
+.trainings{
+    margin: 0px 60px;
+}
+.trainings .col-lg-6{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.trainings img{
+    object-fit: cover;
+    height: 100%;
+}

@@ -1,0 +1,83 @@
+.banner{
+    background: url('../res/signUp/fitnesbackground.gif') no-repeat center;
+    background-size: cover;
+}
+
+.page-content{
+    padding-left: 150px;
+    margin-right: 150px;
+}
+
+/* Memberships */
+.membership-select .row{
+    overflow: hidden; 
+    margin-top: 20px;
+}
+
+.membership-select [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.membership-option{
+    padding: 20px;
+    background-color: rgb(45, 42, 39);
+}
+.membership-details{
+    padding: 20px;
+    background-color: gray;
+    height: 100%;
+    border-bottom-width: 5px;
+    border-color: rgb(31, 31, 31)
+}
+.membership-details ul{
+    list-style: none;
+    padding: 0px;
+    height: 40%;
+}
+.membership-details .includes{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.price{
+    font-size: 3em;
+}
+.hr-small{
+    width: 25%;
+    border-width: 2px;
+}
+
+.add-ons{
+    padding-top: 10% !important;
+}
+
+.access-level-3 .membership-details{
+    background: #82751a; /* Old browsers */
+    background: -moz-linear-gradient(left, #82751a 0%, #841113 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #82751a 0%,#841113 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #82751a 0%,#841113 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.access-level-3 h4, .access-level-3 hr{
+    color: #ff9100;
+    border-color: #ff9100;
+}
+.access-level-2 .membership-details{
+    background: #841113; /* Old browsers */
+    background: -moz-linear-gradient(left, #841113 0%, #540e6d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #841113 0%,#540e6d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #841113 0%,#540e6d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.access-level-2 h4, .access-level-2 hr{
+    color: #dc0396;
+    border-color: #dc0396;
+}
+.access-level-1 .membership-details{
+    background: #540e6d; /* Old browsers */
+    background: -moz-linear-gradient(left, #540e6d 0%, #0d6660 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #540e6d 0%,#0d6660 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #540e6d 0%,#0d6660 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.access-level-1 h4, .access-level-1 hr{
+    color: aquamarine;
+    border-color: aquamarine;
+}

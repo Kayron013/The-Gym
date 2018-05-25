@@ -1,0 +1,13 @@
+.banner{
+    background: url('../res/aboutUs/workout-friends-background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+iframe{
+    border-radius: 5%;
+}
+
+section{
+    text-align: center;
+    margin-bottom: 50px;
+}

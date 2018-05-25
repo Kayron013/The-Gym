@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi|Libre+Baskerville|Noto+Serif|Passion+One');
+
+body{
+  background: #1b1815;
+  color: white;
+  font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+}
+
+/* Page Banner */
+.banner{
+  position: relative;
+  margin-bottom: 0;
+  border-radius: 0px;
+  height: 450px;
+}
+.banner img{
+  height: 200px;
+  margin-top: -25px;
+}
+
+.page-title{
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  color: white;
+}
+
+.title{
+  font-family: 'Gugi', 'Times New Roman', Times, serif;
+  width: 100%;
+  font-size: 6rem;
+  position: absolute;
+  top: 50%;
+  text-shadow: 4px 4px rgb(18, 102, 98);
+  margin-left: -32px;
+}
+
+
+/* Navigation Bar */
+.top-nav{
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  height: 56px;
+}
+.top-nav a{
+  color: #449b95 !important;
+  transition: color 0.5s ease;
+}
+.top-nav a:hover{
+  color: #2cc4ba !important;
+}
+.top-nav .active a{
+  color: #04e6d6 !important;
+}
+.top-nav img{
+  margin-top: -55px;
+  margin-bottom: -25px;
+}
+.top-nav .small-logo{
+  height: 55px;
+  margin-top: -15px;
+  margin-bottom: -10px;
+}
+
+/* Join Button */
+a.btn{
+  color: #28a745 !important;
+}
+a.btn:hover{
+  color: white !important;
+}
+
+/* Page Content */
+.page-content{
+  padding: 30px 100px;
+  min-width: 550px;
+  margin: 0px !important;
+}
+
+hr{
+  border-color: #449b95;
+}
+
+.sub{
+  font-size: smaller;
+}
+
+/* Helper Class */
+.center{
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2{
+  font-family: 'Passion One', cursive;
+  font-size: 3rem;
+}
+
+/* Footer */
+footer{
+  background-color: #000;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0px !important;
+}
+footer .sect{
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+footer a{
+  color: #00e7ff;
+}
+footer a:hover{
+  color: #04a4b6;
+}

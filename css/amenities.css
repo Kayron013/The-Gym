@@ -1,0 +1,28 @@
+.banner{
+    background: url('../res/amenities/amenities-background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.section{
+    background-color: rgba(0, 139, 139,0.3) ;
+    border-radius: 6px;
+    padding: 25px;
+    position: relative;
+    margin: 10px 0px;
+}
+.section h4{
+    color: rgb(135, 235, 235);
+}
+.section img{
+    position: absolute;
+    top: 18px;
+    right: 35px;
+    height: 50px;
+}
+
+hr{
+    margin-top: 0px !important;
+}
+h2{
+    margin-bottom: 0px !important;
+}

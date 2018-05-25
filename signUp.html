@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amenities | The GYM</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="icon" href="./res/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/signUp.css">
+</head>
+<body>
+    <div class="page-title container-fluid">
+      <div class="jumbotron banner">
+        <h1 class='title'>Make The Commitment</h1>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark top-nav">
+      <a class="navbar-brand" href="index.html"><img src="./res/logo.png" alt="logo" height='110px' id='nav-logo'></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="amenities.html">Accomodations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="training.html">Training</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="motivation.html">Motivation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class='container-fluid page-content'>
+        <div class='membership-select' style='display:block' id='membership-select'>
+            <h2 class='center'>Select A Membership</h2>
+            <div class='row text-center'>
+                <div class='col-md-4 access-level-3'>
+                    <div class='membership-option'>
+                        <h4>BROLIC</h4>
+                        <div class='price'><small>$</small>24<sup><small>95</small></sup></div>
+                        <small class='text-muted'>Monthly Recurring Payment</small>
+                        <hr class='hr-small'>
+                        <div class='access-level3'>Access to 221 Clubs</div>
+                        <br>
+                        <button class='btn btn-block btn-dark' onclick='selectMembership("3")'>SELECT</button>
+                    </div>
+                    <div class='membership-details'>
+                        <div class='includes'>INCLUDES</div>
+                        <ul>
+                            <li>Workout Essentials</li>
+                            <li>Locker Rooms with Showers</li>
+                            <li>Free CAMP CRUNCH Orientation</li>
+                            <li>CAMP CRUNCH: Online Nutrition Program</li>
+                            <li>Power Half Hour Circuit Training</li>
+                            <li>Group Fitness Classes</li>
+                            <li>Crunch Live Video Workouts</li>
+                            <li>Free T-shirt</li>
+                            <li>Online Class Reservations</li>
+                            <li>Guest Privileges</li>
+                            <li>HydroMassage®</li>
+                            <li>Tanning</li>
+                        </ul>
+                        <ul class='add-ons'>
+                            <li>CAMP CRUNCH: Personal Training</li>
+                            <li>CAMP CRUNCH: Small Group Training</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='col-md-4 access-level-2'>
+                    <div class='membership-option'>
+                        <h4>BUILT</h4>
+                        <div class='price'><small>$</small>19<sup><small>95</small></sup></div>
+                        <small class='text-muted'>Monthly Recurring Payment</small>
+                        <hr class='hr-small'>
+                        <div class='access-level3'>Access to 221 Clubs</div>
+                        <br>
+                        <button class='btn btn-block btn-dark' onclick='selectMembership("2")'>SELECT</button>
+                    </div>
+                    <div class='membership-details'>
+                        <div class='includes'>INCLUDES</div>
+                        <ul>
+                            <li>Workout Essentials</li>
+                            <li>Locker Rooms with Showers</li>
+                            <li>Free CAMP CRUNCH Orientation</li>
+                            <li>CAMP CRUNCH: Online Nutrition Program</li>
+                            <li>Power Half Hour Circuit Training</li>
+                            <li>Group Fitness Classes</li>
+                            <li>Crunch Live Video Workouts</li>
+                            <li>Free T-shirt</li>
+                        </ul>
+                        <ul class='add-ons'>
+                            <li>CAMP CRUNCH: Personal Training</li>
+                            <li>CAMP CRUNCH: Small Group Training</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='col-md-4 access-level-1'>
+                    <div class='membership-option'>
+                        <h4>BASIC</h4>
+                        <div class='price'><small>$</small>9<sup><small>95</small></sup></div>
+                        <small class='text-muted'>Monthly Recurring Payment</small>
+                        <hr class='hr-small'>
+                        <div class='access-level3'>Access to Nearest Club</div>
+                        <br>
+                        <button class='btn btn-block btn-dark' onclick= 'selectMembership("1")'>SELECT</button>
+                    </div>
+                    <div class='membership-details'>
+                        <div class='includes'>INCLUDES</div>
+                        <ul>
+                            <li>Workout Essentials</li>
+                            <li>Locker Rooms with Showers</li>
+                            <li>Free CAMP CRUNCH Orientation</li>
+                            <li>CAMP CRUNCH: Online Nutrition Program</li>
+                            <li>Power Half Hour Circuit Training</li>
+                        </ul>
+                        <ul class='add-ons'>
+                            <li>CAMP CRUNCH: Personal Training</li>
+                            <li>CAMP CRUNCH: Small Group Training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <form  action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="POST" style='display:none' class='membership-form' id='membership-form'>
+            <h2 class='center'>Complete the Form</h2>
+
+            <h3>Chosen Membership</h3>
+            <hr>
+            <div class='row'>
+                <div class='form-group col-md-6'>
+                    <label for="membership-selection">Membership</label>
+                    <select name="membership" id="membership-selection" class='form-control' required>
+                        <option value="3">Brolic ($24.95)</option>
+                        <option value="2">Built ($19.95)</option>
+                        <option value="1">Basic ($9.95)</option>
+                    </select>
+                </div>
+                <div class='form-group col-md-6'>
+                    <label for="opt-ins">Complementary Opt-ins</label>
+                    <div id='opt-ins'>
+                        <div class='form-check form-check-inline'>
+                            <label for='reminders'>
+                                <input type="checkbox" class='form-check-input' value='reminders' name='reminders'>SMS Reminders
+                            </label>
+                        </div>
+                        <div class='form-check form-check-inline'>
+                                <label for='newsletters'>
+                                    <input type="checkbox" class='form-check-input' value='newsletters' name='newsletters'>Email Newsletters
+                                </label>
+                            </div>
+                    </div>
+                    <small class='text-muted'>All options can be opted out of at any time.</small>
+                </div>
+            </div>
+
+            <h3>Personal Information</h3>
+            <hr>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" pattern='[A-Za-z]+ [A-Za-z]+(( [A-Za-z]+)+)?' title='Ex. John Smith (Only letters)' class='form-control' id='full-name' name='full-name' required>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="address">Street Address</label>
+                        <input type="text" class='form-control' id='address' name='address' required>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="city">City</label>
+                        <input type="text" pattern='[\w ]+' title='Ex. New York' class='form-control' id='city' name='city' required>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="state">State</label>
+                        <select required class='form-control' id='state'>
+                            <option value=""></option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AR">AR</option>	
+                            <option value="AZ">AZ</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DC">DC</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="IA">IA</option>	
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="MD">MD</option>
+                            <option value="ME">ME</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MO">MO</option>	
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NC">NC</option>	
+                            <option value="NE">NE</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>			
+                            <option value="NV">NV</option>
+                            <option value="NY">NY</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WI">WI</option>	
+                            <option value="WV">WV</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="zip">Zip</label>
+                        <input type="text" pattern="\d{5}" title='Ex. 11212' class='form-control' id='zip' name='zip' required>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" pattern="\d{3}-\d{3}-\d{4}" title='Ex. 123-456-0789' class='form-control' id='phone-number' name='phone-number' placeholder="XXX-XXX-XXXX" required>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="gender-radios">Gender</label>
+                        <div id='gender-radios'>
+                            <div class='form-check form-check-inline'>
+                                <label for="gender-male">
+                                    <input type="radio" value='male' name='gender' class='form-check-input' required>Male
+                                </label>
+                            </div>
+                            <div class='form-check form-check-inline'>
+                                <label for="gender-female">
+                                    <input type="radio" value='female' name='gender' class='form-check-input'>Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="email">Email Address</label>
+                        <input type="email" pattern='\w+@\w+\.[A-Za-z]{3,4}' title='name@example.com' id='email' name='email' class='form-control' required>
+                    </div>
+                </div>
+            </div>
+            
+
+            <h3>Billing Information</h3>
+            <hr>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="first-name">First Name</label>
+                        <input type="text" pattern='[A-Za-z]+' title='Ex. John (Only letters)' class='form-control' id='first-name' name='first-name' required>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" pattern='[A-Za-z]+' title='Ex. Smith (Only letters)' class='form-control' id='last-name' name='last-name' required>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="billing-address">Street Address</label>
+                        <input type="text" pattern='[\w ]+' title='Ex. 123 Hamilton Road' name="billing-address" id="billing-address" class='form-control' required>
+                     </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="billing-city">City</label>
+                        <input type="text" pattern='[\w ]+' title='Ex. New York' class='form-control' id='billing-city' name='billing-city' required>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="billing-state">State</label>
+                        <select required class='form-control' id='billing-state'>
+                            <option value=""></option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AR">AR</option>	
+                            <option value="AZ">AZ</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DC">DC</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="IA">IA</option>	
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="MA">MA</option>
+                            <option value="MD">MD</option>
+                            <option value="ME">ME</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MO">MO</option>	
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="NC">NC</option>	
+                            <option value="NE">NE</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>			
+                            <option value="NV">NV</option>
+                            <option value="NY">NY</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WI">WI</option>	
+                            <option value="WV">WV</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='form-group'>
+                        <label for="zip">Zip</label>
+                        <input type="text" pattern="\d{5}" title='Ex. 11212' class='form-control' id='zip' name='zip' required>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-4'>
+                    <div class='form-group'>
+                        <label for="credit-card">Credit Card Number</label>
+                        <input type="text" pattern="\d{16}" title="16 digit number" class='form-control' id='credit-card' name='credit-card' required>
+                        <small class='text-muted'>We do not accept American Express at this time.</small>
+                    </div>
+                </div>
+                <div class='col-md-2'>
+                    <div class='form-group'>
+                        <label for="cvv">CVV Code</label>
+                        <input type="text" pattern="\d{3,4}" title='3 or 4 digit verification code' class='form-control' id='cvv' name='cvv' required>
+                    </div>
+                </div>
+                <div class='col-md-3'>
+                        <div class='form-group'>
+                            <label for="expiry-month">Expiry Month</label>
+                            <select name="expiry-month" id="expiry-month" class='form-control' required>
+                                <option value=""></option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class='col-md-3'>
+                        <div class='form-group'>
+                            <label for="expiry-year">Expiry Year</label>
+                            <select name="expiry-year" id="expiry-year" class='form-control' required>
+                                <option value=""></option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                    </div>
+            </div>
+
+            <div class='row'>
+                    <div class='col-md-12'>
+                        <button type='submit' class='btn btn-info'>SUBMIT</button>
+                    </div>
+                </div>
+
+        </form style='display:block'>
+    </div>
+
+    <footer class='row text-center'>
+      <div class='col-md-4'>
+          <img src="./res/footer/agm_logo.png" alt="Greater Men Logo" height='200px'><br>
+          <small>Privacy Policy © 2018 Greater Men Inc. All Rights Reserved.</small>          
+      </div>
+      <div class='col-md-4'>
+        <img src="./res/footer/ace.png" alt="Ace of Arts Logo" class='img-fluid'><br>
+        <p>&lt; &#47; &gt;&nbsp; by Angel K. Campbell<br>
+          CST 2309 Final<br>
+          New York City College of New York<br>
+          Spring 2018<br>
+          <a class='white' href='mailto:akcampbell160@gmail.com'>AKCampbell160@gmail.com</a>
+        </p>
+      </div>
+      <div class='col-md-4'>
+        <img src="./res/logo.png" alt="website logo" height='200px'><br>
+        <small>Privacy Policy © 2018 The GYM All Rights Reserved.</small> 
+      </div>
+    </footer>
+    <script src='./js/main.js'></script>
+    <script src='./js/signUp.js'></script>
+</body>
+</html>
